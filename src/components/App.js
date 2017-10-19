@@ -1,7 +1,7 @@
-import React, { PropTypes } from 'react';
+import React, { PropTypes, Component } from 'react';
 import Header from './common/Header';
 
-class App extends React.Component {
+class App extends Component {
     render() {
         return (
             <div className="container-fluid">
@@ -14,7 +14,12 @@ class App extends React.Component {
 }
 
 App.PropTypes = {
-    children: PropTypes.object.isRequired
+    //children: PropTypes.object.isRequired
+    // children: React.PropTypes.oneOfType([
+    //     React.PropTypes.arrayOf(React.PropTypes.node),
+    //     React.PropTypes.node
+    //   ])
+    children: React.PropTypes.node
 };
 
 export default App;
