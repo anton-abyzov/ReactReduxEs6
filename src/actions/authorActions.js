@@ -2,6 +2,7 @@ import AuthorApi from '../api/mockAuthorApi';
 import * as types from './actionTypes';
 
 export const loadAuthorsSuccess = (authors) => {
+    debugger;
     return { type: types.LOAD_AUTHORS_SUCCESS, authors };
 };
 
